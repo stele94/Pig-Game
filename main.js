@@ -72,7 +72,7 @@ class App {
             this.score[this.activePlayer] += this.cube.currentScore;
             document.querySelector(`#score--${this.activePlayer}`).textContent = this.score[this.activePlayer];
 
-            if (this.score[this.activePlayer] >= 20) {
+            if (this.score[this.activePlayer] >= 100) {
                 document.querySelector(`.player--${this.activePlayer}`).classList.remove('player--active');
 
                 document.querySelector(`.player--${this.activePlayer}`).classList.add('player--winner');
